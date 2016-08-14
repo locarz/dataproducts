@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(ggplot2)\nmydata <- mtcars\nshinyServer(function(input, output) {\n    myresult <- reactive({\n        paste(\"mpg ~\", \"as.integer(\", input$x,\")\")\n    })\n    mymodel <- reactive({\n        lm(as.formula(myresult()),data=mydata)\n    })\n    output$summary <- renderPrint({\n        predictor <- input$x\n    })\n    output$text <- renderText({\n        paste(\"LM Model:\", \"mpg ~\", input$x)\n    })\n    output$myplot <- renderPlot ({\n        with(mydata, {plot(as.formula(myresult()),xlab=input$x,ylab=\"mpg\")\n            abline(mymodel(), )\n        })\n    })\n})\n\n",
+    "created" : 1471176841404.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1552169104",
+    "id" : "A87991C5",
+    "lastKnownWriteTime" : 1471185607,
+    "path" : "~/ddp-project/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "Coursera Presentation for Data Products\n========================================================\nauthor: Neal G \ndate: Aug 13, 2016\n\nIntroduction\n========================================================\nThis presentation is part of the required courserwork for the coursera \nDeveloping Data Products.  \n\nThis peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.\n\nWhy are we here\n========================================================\n\nThe outcome of this project is to demonstrate basic skill in providing a web enabled (html5) applicaiton, and its supporting presentaion slidedeck.  \n\nI chose to reuse a project from the regression class, the linerar model regression of the Mtcars dataset.. \n\nThis dataset is included with R, and is provided by Motor Trend.\n\nIt is located at https://locarz.shinyapps.io/ddp-project/\n\nSample of running R within Rpres\n========================================================\n\nFor example, here is a pairwise plot of the dataset.  It's a nice way to quickly and visually explore the dataset..\n\n```{r}\npairs(mpg ~ ., data = mtcars)\n```\n\nReview.  What have we demonstrated\n========================================================\n1. Shiny is a very flexiable tool for buiding interactive R applications\n2. Slidify is a great tool for quick presentations\n3. Rpub is a super easy way to deploy presentation from Sidify, when it works lol.\n4. Rpres is what I ended up using as Slidify failed to render on Rpub.\n\n\nThanks to all the instructors :)\n\n\n",
+    "created" : 1471207759821.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1160079575",
+    "id" : "9BD5F6DE",
+    "lastKnownWriteTime" : 1471208093,
+    "path" : "~/ddp-project/presentation/Presentation.Rpres",
+    "project_path" : "presentation/Presentation.Rpres",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}

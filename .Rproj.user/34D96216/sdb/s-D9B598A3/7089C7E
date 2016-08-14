@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\nlibrary(shiny)\nlibrary(datasets)\nshinyUI(fluidPage(\n    sidebarPanel(\n        p('This is a simple linerar model of mgp vs a number of choices of predictors'),\n        p('Select the predictor variable:'),\n        selectInput('x', label='Predictor', selected='carb', choices=names(mtcars)),\n        h3('Notes'),\n        p(\"I reused a previous project from the regresion class as the basis of this simple shiny app\")),\n\n    mainPanel(\n        div(h3(\"Mtcars regression model\")),\n        plotOutput('myplot'))\n    \n))",
+    "created" : 1471176840985.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "597526132",
+    "id" : "7089C7E",
+    "lastKnownWriteTime" : 1471185861,
+    "path" : "~/ddp-project/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
